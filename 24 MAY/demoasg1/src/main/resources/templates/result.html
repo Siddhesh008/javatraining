@@ -1,0 +1,15 @@
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+<title> Signup Result</title>
+</head>
+<body>
+<h1> Signup Result </h1>
+<table border="1">
+<tr th:each="emp:${employee}">
+<td th:text="'username:'+${emp.username}"/>
+<td th:text="'password:'+${emp.password}"/>
+<td th:text="'E mail:'+${emp.email}"/>
+</tr>
+</table>
+</body>
+</html>
